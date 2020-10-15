@@ -1,5 +1,14 @@
 import styled from "styled-components/macro";
 
+
+export const Item = styled.div `
+    display: flex;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    color: white;
+    overflow: hidden;
+`
+
 export const Inner = styled.div`
   display: flex;
   align-items: center;
@@ -38,7 +47,7 @@ export const SubTitle = styled.h2`
   font-size: 26px;
   font-weight: normal;
   line-height: normal;
-  
+
   @media (max-width: 600px) {
     font-size: 18px;
   }

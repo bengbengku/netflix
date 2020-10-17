@@ -1,7 +1,13 @@
 import styled from "styled-components/macro";
 import { Link as ReactRouterLink } from "react-router-dom";
 
-export const Background = styled.div``;
+export const Background = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: url(${({ src }) =>
+      src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg'})
+    top left / cover no-repeat;
+`;
 
 export const Frame = styled.div``;
 
@@ -14,11 +20,11 @@ export const Container = styled.div`
   align-items: center;
 
   a {
-      display: flex;
-  }  
+    display: flex;
+  }
 
   @media (max-width: 1000px) {
-      margin: 0 30px;
+    margin: 0 30px;
   }
 `;
 
@@ -35,7 +41,7 @@ export const Logo = styled.img`
 
 export const ButtonLink = styled(ReactRouterLink)`
   display: block;
-  background-color: #e50914;
+  background-color: #d81f26;
   width: 84px;
   height: fit-content;
   color: white;

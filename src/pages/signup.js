@@ -32,12 +32,13 @@ export default function Signup() {
           .then(() => {
             history.push(ROUTES.BROWSE);
           });
-      }).catch((error) => {
-          setFirstName('');
-          setEmailAddress('');
-          setPassword('');
-          setError(error.message);
       })
+      .catch((error) => {
+        setFirstName("");
+        setEmailAddress("");
+        setPassword("");
+        setError(error.message);
+      });
   };
 
   return (

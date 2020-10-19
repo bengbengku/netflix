@@ -9,6 +9,7 @@ export function BrowseContainer({ slides }) {
   const user = firebase.auth().currentuser || {};
 
   useEffect(() => {
+    console.log("profile", profile);
     setTimeout(() => {
       setLoading(false);
     }, 3000);

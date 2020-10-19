@@ -14,14 +14,14 @@ Profiles.List = function ProfilesList({ children, ...restProps }) {
 };
 
 Profiles.User = function ProfilesUser({ children, ...restProps }) {
-  return <User {...restProps}>{children}</User>;
+  return <Item {...restProps}>{children}</Item>;
 };
 
 Profiles.Picture = function ProfilesPicture({ src, ...restProps }) {
   return (
     <Picture
       {...restProps}
-      src={src ? `/images/users/${src}.png` : `/images/misc/loading.gif`}
+      src={src ? `/images/users/${src}.png` : "/images/misc/loading.gif"}
     />
   );
 };
